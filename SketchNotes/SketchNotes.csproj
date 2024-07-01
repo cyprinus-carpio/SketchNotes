@@ -208,6 +208,7 @@
     <Content Include="Assets\Finish.png" />
     <Content Include="Assets\HomePage.jpg" />
     <Content Include="Assets\HomePage.mp4" />
+    <Content Include="Assets\KeLeeBookmark.png" />
     <Content Include="Assets\LargeTile.scale-100.png" />
     <Content Include="Assets\LargeTile.scale-125.png" />
     <Content Include="Assets\LargeTile.scale-150.png" />
@@ -372,32 +373,35 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Labs.Uwp.RivePlayer">
+      <Version>0.1.240628-build.1693</Version>
+    </PackageReference>
     <PackageReference Include="CommunityToolkit.Uwp.Animations">
-      <Version>8.0.240109</Version>
+      <Version>8.1.240606-rc</Version>
     </PackageReference>
     <PackageReference Include="CommunityToolkit.Uwp.Behaviors">
-      <Version>8.0.240109</Version>
+      <Version>8.1.240606-rc</Version>
     </PackageReference>
     <PackageReference Include="CommunityToolkit.Uwp.Controls.ImageCropper">
-      <Version>8.0.240109</Version>
+      <Version>8.1.240606-rc</Version>
     </PackageReference>
     <PackageReference Include="CommunityToolkit.Uwp.Controls.RadialGauge">
-      <Version>8.0.240109</Version>
+      <Version>8.1.240606-rc</Version>
     </PackageReference>
     <PackageReference Include="CommunityToolkit.Uwp.Controls.Segmented">
-      <Version>8.0.240109</Version>
+      <Version>8.1.240606-rc</Version>
     </PackageReference>
     <PackageReference Include="CommunityToolkit.Uwp.Controls.SettingsControls">
-      <Version>8.0.240109</Version>
+      <Version>8.1.240606-rc</Version>
     </PackageReference>
     <PackageReference Include="CommunityToolkit.Uwp.Controls.Sizers">
-      <Version>8.0.240109</Version>
+      <Version>8.1.240606-rc</Version>
     </PackageReference>
     <PackageReference Include="CommunityToolkit.Uwp.Converters">
-      <Version>8.0.240109</Version>
+      <Version>8.1.240606-rc</Version>
     </PackageReference>
     <PackageReference Include="CommunityToolkit.Uwp.DeveloperTools">
-      <Version>8.0.240109</Version>
+      <Version>8.1.240606-rc</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.Graph">
       <Version>5.56.0</Version>
@@ -430,6 +434,7 @@
   <ItemGroup>
     <Content Include="Assets\SketchNotesLicense.md" />
     <Content Include="Assets\GPLLicense.txt" />
+    <None Include="Assets\KeLeeAnimation.riv" />
     <None Include="SketchNotes_TemporaryKey.pfx" />
     <PRIResource Include="Tokens.resw" />
   </ItemGroup>

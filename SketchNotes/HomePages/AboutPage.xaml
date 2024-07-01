@@ -98,6 +98,12 @@
                                                    ActionIcon="{ui:FontIcon Glyph=&#xE8A7;}"
                                                    IsClickEnabled="True"
                                                    Click="HoYoverseSettingsCard_Click" />
+                            <controls:SettingsCard x:Name="QuAnSettingsCard"
+                                                   Header="可莉头像"
+                                                   Description="© 2024 QuAn___。保留所有权利。"
+                                                   ActionIcon="{ui:FontIcon Glyph=&#xE8A7;}"
+                                                   IsClickEnabled="True"
+                                                   Click="QuAnSettingsCard_Click" />
                         </controls:SettingsExpander.Items>
                     </controls:SettingsExpander>
                     <TextBlock Margin="0,28,0,0">

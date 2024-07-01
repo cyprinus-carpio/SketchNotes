@@ -920,6 +920,11 @@ namespace SketchNotes
 
         }
 
+        private void ShowKeLee_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
         /// <summary>
         /// Sign out the current user
         /// </summary>

@@ -27,20 +27,22 @@ namespace SketchNotes.HomePages
 
         private async void SamaSettingsCard_Click(object sender, RoutedEventArgs e)
         {
-            var uri = new Uri("https://www.pixiv.net/users/5094445");
-            await Windows.System.Launcher.LaunchUriAsync(uri);
+            await Windows.System.Launcher.LaunchUriAsync(new Uri("https://space.bilibili.com/34621680"));
         }
 
         private async void MicrosoftSettingsCard_Click(object sender, RoutedEventArgs e)
         {
-            var uri = new Uri("https://www.microsoft.com/servicesagreement");
-            await Windows.System.Launcher.LaunchUriAsync(uri);
+            await Windows.System.Launcher.LaunchUriAsync(new Uri("https://www.microsoft.com/servicesagreement"));
         }
 
         private async void HoYoverseSettingsCard_Click(object sender, RoutedEventArgs e)
         {
-            var uri = new Uri("https://www.hoyoverse.com/");
-            await Windows.System.Launcher.LaunchUriAsync(uri);
+            await Windows.System.Launcher.LaunchUriAsync(new Uri("https://www.hoyoverse.com"));
+        }
+
+        private async void QuAnSettingsCard_Click(object sender, RoutedEventArgs e)
+        {
+            await Windows.System.Launcher.LaunchUriAsync(new Uri("https://space.bilibili.com/1373037"));
         }
     }
 }

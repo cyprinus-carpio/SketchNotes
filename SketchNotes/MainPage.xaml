@@ -11,6 +11,7 @@
     xmlns:animations="using:CommunityToolkit.WinUI.Animations"
     xmlns:animatedvisuals="using:Microsoft.UI.Xaml.Controls.AnimatedVisuals"
     xmlns:ui="using:CommunityToolkit.WinUI"
+    xmlns:rive="using:CommunityToolkit.Labs.WinUI.Rive"
     mc:Ignorable="d"
     muxc:BackdropMaterial.ApplyToRootOrPageBackground="True"
     Loaded="Page_Loaded">
@@ -497,6 +498,29 @@
                                    Orientation="Horizontal"
                                    TargetControl="{x:Bind ResizeGrid}" />
         </Grid>
+        <StackPanel x:Name="MiniKeLee"
+                    x:FieldModifier="Public"
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Right"
+                    Margin="0,0,0,200"
+                    Background="{ThemeResource SystemControlAcrylicElementBrush}"
+                    BorderBrush="{ThemeResource NavigationViewItemSeparatorForeground}"
+                    BorderThickness="1,1,0,1"
+                    CornerRadius="8,0,0,8">
+            <Button x:Name="ShowKeLee"
+                    Style="{ThemeResource CommandBarFlyoutEllipsisButtonStyle}"
+                    ToolTipService.ToolTip="再氪两单嘛~"
+                    Margin="4,4,0,4"
+                    Click="ShowKeLee_Click">
+                <Image Source="ms-appx:///Assets/KeLeeBookmark.png"/>
+            </Button>
+        </StackPanel>
+        <rive:RivePlayer x:Name="MainRivePlayer"
+                         DrawInBackground="True"
+                         Source="ms-appx:///Assets/KeLeeAnimation.riv">
+            <rive:TriggerInput x:Name="WagEarsTriggerInput"
+                               Target="Wag Ears" />
+        </rive:RivePlayer>
         <StackPanel x:Name="MiniSketch"
                     x:FieldModifier="Public"
                     VerticalAlignment="Top"
