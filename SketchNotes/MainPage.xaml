@@ -269,154 +269,6 @@
                 </muxc:TabViewItem.IconSource>
             </muxc:TabViewItem>
         </muxc:TabView>
-        <StackPanel x:Name="LeftStackPanel"
-                    Margin="12,0,0,12"
-                    VerticalAlignment="Bottom"
-                    HorizontalAlignment="Left">
-            <StackPanel Orientation="Horizontal"
-                        Margin="0,0,0,4">
-                <TextBlock x:Name="LeftPageTextBlock"
-                           VerticalAlignment="Center" />
-                <muxc:NumberBox x:Name="LeftNumberBox"
-                                Margin="4,0,0,0"
-                                Height="32"
-                                SpinButtonPlacementMode="Compact" />
-            </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <Button x:Name="LeftPreviousBtn"
-                        Style="{ThemeResource CommandBarFlyoutEllipsisButtonStyle}"
-                        ToolTipService.ToolTip="上一页"
-                        Click="Previous">
-                    <FontIcon Glyph="&#xE72B;"
-                              FontSize="16" />
-                </Button>
-                <Button x:Name="LeftNextBtn"
-                        Style="{ThemeResource CommandBarFlyoutEllipsisButtonStyle}"
-                        Margin="-4,0,0,0"
-                        ToolTipService.ToolTip="下一页"
-                        Click="Next">
-                    <FontIcon x:Name="LeftNextFontIcon"
-                              FontSize="16" />
-                </Button>
-                <AppBarSeparator />
-                <Button x:Name="FullScreenBtn"
-                        Style="{ThemeResource CommandBarFlyoutEllipsisButtonStyle}"
-                        Margin="4,0,0,0"
-                        ToolTipService.ToolTip="全屏"
-                        Click="FullScreenBtn_Click">
-                    <FontIcon x:Name="FullScreenFontIcon"
-                              FontSize="16" />
-                </Button>
-                <Button x:Name="PicInPicBtn"
-                        Style="{ThemeResource CommandBarFlyoutEllipsisButtonStyle}"
-                        Margin="-4,0,0,0"
-                        ToolTipService.ToolTip="保持在顶部"
-                        Click="PicInPicBtn_Click">
-                    <FontIcon FontSize="16"
-                              Glyph="&#xEE49;" />
-                </Button>
-                <AppBarSeparator />
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="RightStackPanel"
-                    Margin="0,0,12,12"
-                    VerticalAlignment="Bottom"
-                    HorizontalAlignment="Right">
-            <StackPanel Orientation="Horizontal"
-                        Margin="0,0,0,4"
-                        HorizontalAlignment="Right">
-                <TextBlock x:Name="RightPageTextBlock"
-                           VerticalAlignment="Center" />
-                <muxc:NumberBox x:Name="RightNumberBox"
-                                Margin="4,0,0,0"
-                                Height="32"
-                                SpinButtonPlacementMode="Compact"  />
-            </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <AppBarSeparator Margin="0,0,4,0" />
-                <Button Style="{ThemeResource CommandBarFlyoutEllipsisButtonStyle}"
-                        ToolTipService.ToolTip="查看更多">
-                    <FontIcon Glyph="&#xE712;"
-                              FontSize="16" />
-                    <Button.Flyout>
-                        <MenuFlyout>
-                            <MenuFlyoutSubItem Text="新建"
-                                               Icon="Add">
-                                <MenuFlyoutItem Tag="Note"
-                                                Text="笔记"
-                                                Icon="Highlight"
-                                                Click="AddPageMenuFlyoutItem_OnClick" />
-                                <MenuFlyoutItem Tag="Web"
-                                                Text="Web 页"
-                                                Icon="Page2"
-                                                Click="AddPageMenuFlyoutItem_OnClick" />
-                                <MenuFlyoutItem Tag="Map"
-                                                Text="地图"
-                                                Icon="Map"
-                                                Click="AddPageMenuFlyoutItem_OnClick" />
-                                <MenuFlyoutItem Tag="Capture"
-                                                Text="捕获"
-                                                Icon="Video"
-                                                Click="AddPageMenuFlyoutItem_OnClick" />
-                            </MenuFlyoutSubItem>
-                            <MenuFlyoutSubItem Text="工具"
-                                               Icon="Manage">
-                                <MenuFlyoutItem Tag="Timer"
-                                                Text="计时器"
-                                                Icon="Clock"
-                                                Click="AddPageMenuFlyoutItem_OnClick" />
-                            </MenuFlyoutSubItem>
-                            <MenuFlyoutSeparator />
-                            <MenuFlyoutItem Tag="Help"
-                                            Text="帮助"
-                                            Icon="{ui:FontIcon Glyph=&#xE9CE;}"
-                                            Click="AddPageMenuFlyoutItem_OnClick">
-                            </MenuFlyoutItem>
-                            <MenuFlyoutItem x:Name="HomeMenuFlyoutItem"
-                                            Text="主页"
-                                            Icon="Home"
-                                            Click="HomeMenuFlyoutItem_Click" />
-                            <MenuFlyoutSeparator />
-                            <MenuFlyoutItem x:Name="CloseAppMenuFlyoutItem"
-                                            Text="关闭 SketchNotes"
-                                            Icon="Cancel"
-                                            Click="CloseAppMenuFlyoutItem_Click" />
-                        </MenuFlyout>
-                    </Button.Flyout>
-                </Button>
-                <Button Style="{ThemeResource CommandBarFlyoutEllipsisButtonStyle}"
-                            Margin="-4,0,0,0"
-                            ToolTipService.ToolTip="扩展">
-                    <FontIcon 
-                                  Glyph="&#xEA86;"
-                                  FontSize="16" />
-                    <Button.Flyout>
-                        <MenuFlyout>
-
-                        </MenuFlyout>
-                    </Button.Flyout>
-                </Button>
-                <AppBarSeparator />
-                <Button x:Name="RightPreviousBtn"
-                            Style="{ThemeResource CommandBarFlyoutEllipsisButtonStyle}"
-                            Margin="4,0,0,0"
-                            ToolTipService.ToolTip="上一页"
-                            Click="Previous">
-                    <FontIcon 
-                                  Glyph="&#xE72B;"
-                                  FontSize="16" />
-                </Button>
-                <Button x:Name="RightNextBtn"
-                            Style="{ThemeResource CommandBarFlyoutEllipsisButtonStyle}"
-                            Margin="-4,0,-4,0"
-                            ToolTipService.ToolTip="下一页"
-                            Click="Next">
-                    <FontIcon x:Name="RightNextFontIcon"
-                                  
-                                  FontSize="16" />
-                </Button>
-            </StackPanel>
-        </StackPanel>
         <Border x:Name="ToolBarBorder"
                 Height="0"
                 Background="{ThemeResource NavigationViewItemSeparatorForeground}"
@@ -517,10 +369,164 @@
         </StackPanel>
         <rive:RivePlayer x:Name="MainRivePlayer"
                          DrawInBackground="True"
-                         Source="ms-appx:///Assets/KeLeeAnimation.riv">
+                         Source="ms-appx:///Assets/KeLeeAnimation.riv"
+                         HorizontalAlignment="Left"
+                         VerticalAlignment="Bottom"
+                         Height="320"
+                         Width="200"
+                         Tapped="MainRivePlayer_Tapped">
             <rive:TriggerInput x:Name="WagEarsTriggerInput"
                                Target="Wag Ears" />
         </rive:RivePlayer>
+        <TextBox Width="200"
+                 Height="32"
+                 VerticalAlignment="Bottom"
+                 HorizontalAlignment="Left" />
+        <StackPanel x:Name="LeftStackPanel"
+                    Margin="12,0,0,12"
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Left">
+            <StackPanel Orientation="Horizontal"
+                        Margin="0,0,0,4">
+                <TextBlock x:Name="LeftPageTextBlock"
+                           VerticalAlignment="Center" />
+                <muxc:NumberBox x:Name="LeftNumberBox"
+                                Margin="4,0,0,0"
+                                Height="32"
+                                SpinButtonPlacementMode="Compact" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="LeftPreviousBtn"
+                        Style="{ThemeResource CommandBarFlyoutEllipsisButtonStyle}"
+                        ToolTipService.ToolTip="上一页"
+                        Click="Previous">
+                    <FontIcon Glyph="&#xE72B;"
+                              FontSize="16" />
+                </Button>
+                <Button x:Name="LeftNextBtn"
+                        Style="{ThemeResource CommandBarFlyoutEllipsisButtonStyle}"
+                        Margin="-4,0,0,0"
+                        ToolTipService.ToolTip="下一页"
+                        Click="Next">
+                    <FontIcon x:Name="LeftNextFontIcon"
+                              FontSize="16" />
+                </Button>
+                <AppBarSeparator />
+                <Button x:Name="FullScreenBtn"
+                        Style="{ThemeResource CommandBarFlyoutEllipsisButtonStyle}"
+                        Margin="4,0,0,0"
+                        ToolTipService.ToolTip="全屏"
+                        Click="FullScreenBtn_Click">
+                    <FontIcon x:Name="FullScreenFontIcon"
+                              FontSize="16" />
+                </Button>
+                <Button x:Name="PicInPicBtn"
+                        Style="{ThemeResource CommandBarFlyoutEllipsisButtonStyle}"
+                        Margin="-4,0,0,0"
+                        ToolTipService.ToolTip="保持在顶部"
+                        Click="PicInPicBtn_Click">
+                    <FontIcon FontSize="16"
+                              Glyph="&#xEE49;" />
+                </Button>
+                <AppBarSeparator />
+            </StackPanel>
+        </StackPanel>
+        <StackPanel x:Name="RightStackPanel"
+                    Margin="0,0,12,12"
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Right">
+            <StackPanel Orientation="Horizontal"
+                        Margin="0,0,0,4"
+                        HorizontalAlignment="Right">
+                <TextBlock x:Name="RightPageTextBlock"
+                           VerticalAlignment="Center" />
+                <muxc:NumberBox x:Name="RightNumberBox"
+                                Margin="4,0,0,0"
+                                Height="32"
+                                SpinButtonPlacementMode="Compact" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <AppBarSeparator Margin="0,0,4,0" />
+                <Button Style="{ThemeResource CommandBarFlyoutEllipsisButtonStyle}"
+                        ToolTipService.ToolTip="查看更多">
+                    <FontIcon Glyph="&#xE712;"
+                              FontSize="16" />
+                    <Button.Flyout>
+                        <MenuFlyout>
+                            <MenuFlyoutSubItem Text="新建"
+                                               Icon="Add">
+                                <MenuFlyoutItem Tag="Note"
+                                                Text="笔记"
+                                                Icon="Highlight"
+                                                Click="AddPageMenuFlyoutItem_OnClick" />
+                                <MenuFlyoutItem Tag="Web"
+                                                Text="Web 页"
+                                                Icon="Page2"
+                                                Click="AddPageMenuFlyoutItem_OnClick" />
+                                <MenuFlyoutItem Tag="Map"
+                                                Text="地图"
+                                                Icon="Map"
+                                                Click="AddPageMenuFlyoutItem_OnClick" />
+                                <MenuFlyoutItem Tag="Capture"
+                                                Text="捕获"
+                                                Icon="Video"
+                                                Click="AddPageMenuFlyoutItem_OnClick" />
+                            </MenuFlyoutSubItem>
+                            <MenuFlyoutSubItem Text="工具"
+                                               Icon="Manage">
+                                <MenuFlyoutItem Tag="Timer"
+                                                Text="计时器"
+                                                Icon="Clock"
+                                                Click="AddPageMenuFlyoutItem_OnClick" />
+                            </MenuFlyoutSubItem>
+                            <MenuFlyoutSeparator />
+                            <MenuFlyoutItem Tag="Help"
+                                            Text="帮助"
+                                            Icon="{ui:FontIcon Glyph=&#xE9CE;}"
+                                            Click="AddPageMenuFlyoutItem_OnClick">
+                            </MenuFlyoutItem>
+                            <MenuFlyoutItem x:Name="HomeMenuFlyoutItem"
+                                            Text="主页"
+                                            Icon="Home"
+                                            Click="HomeMenuFlyoutItem_Click" />
+                            <MenuFlyoutSeparator />
+                            <MenuFlyoutItem x:Name="CloseAppMenuFlyoutItem"
+                                            Text="关闭 SketchNotes"
+                                            Icon="Cancel"
+                                            Click="CloseAppMenuFlyoutItem_Click" />
+                        </MenuFlyout>
+                    </Button.Flyout>
+                </Button>
+                <Button Style="{ThemeResource CommandBarFlyoutEllipsisButtonStyle}"
+                        Margin="-4,0,0,0"
+                        ToolTipService.ToolTip="扩展">
+                    <FontIcon Glyph="&#xEA86;"
+                              FontSize="16" />
+                    <Button.Flyout>
+                        <MenuFlyout>
+
+                        </MenuFlyout>
+                    </Button.Flyout>
+                </Button>
+                <AppBarSeparator />
+                <Button x:Name="RightPreviousBtn"
+                        Style="{ThemeResource CommandBarFlyoutEllipsisButtonStyle}"
+                        Margin="4,0,0,0"
+                        ToolTipService.ToolTip="上一页"
+                        Click="Previous">
+                    <FontIcon Glyph="&#xE72B;"
+                              FontSize="16" />
+                </Button>
+                <Button x:Name="RightNextBtn"
+                        Style="{ThemeResource CommandBarFlyoutEllipsisButtonStyle}"
+                        Margin="-4,0,-4,0"
+                        ToolTipService.ToolTip="下一页"
+                        Click="Next">
+                    <FontIcon x:Name="RightNextFontIcon"
+                              FontSize="16" />
+                </Button>
+            </StackPanel>
+        </StackPanel>
         <StackPanel x:Name="MiniSketch"
                     x:FieldModifier="Public"
                     VerticalAlignment="Top"

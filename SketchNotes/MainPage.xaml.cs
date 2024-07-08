@@ -925,6 +925,11 @@ namespace SketchNotes
 
         }
 
+        private void MainRivePlayer_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
+        {
+
+        }
+
         /// <summary>
         /// Sign out the current user
         /// </summary>

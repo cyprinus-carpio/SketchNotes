@@ -434,7 +434,7 @@
   <ItemGroup>
     <Content Include="Assets\SketchNotesLicense.md" />
     <Content Include="Assets\GPLLicense.txt" />
-    <None Include="Assets\KeLeeAnimation.riv" />
+    <Content Include="Assets\KeLeeAnimation.riv" />
     <None Include="SketchNotes_TemporaryKey.pfx" />
     <PRIResource Include="Tokens.resw" />
   </ItemGroup>
