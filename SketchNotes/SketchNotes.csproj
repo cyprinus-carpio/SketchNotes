@@ -160,6 +160,9 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TabPages\ChemicalEquationBalancerPage.xaml.cs">
+      <DependentUpon>ChemicalEquationBalancerPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TabPages\MapPage.xaml.cs">
       <DependentUpon>MapPage.xaml</DependentUpon>
     </Compile>
@@ -327,6 +330,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="TabPages\ChemicalEquationBalancerPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="TabPages\MapPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -434,7 +441,6 @@
   <ItemGroup>
     <Content Include="Assets\SketchNotesLicense.md" />
     <Content Include="Assets\GPLLicense.txt" />
-    <Content Include="Assets\KeLeeAnimation.riv" />
     <None Include="SketchNotes_TemporaryKey.pfx" />
     <PRIResource Include="Tokens.resw" />
   </ItemGroup>
@@ -442,6 +448,10 @@
     <ProjectReference Include="..\SketchNotes.CaptureEncoder\SketchNotes.CaptureEncoder.csproj">
       <Project>{7ffcaeb5-d8ba-49f4-b89f-7033e7a01447}</Project>
       <Name>SketchNotes.CaptureEncoder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SketchNotes.ChemicalEquationBalancer\SketchNotes.ChemicalEquationBalancer.csproj">
+      <Project>{cdba6e01-32f4-465e-9f78-86ff96e0d38a}</Project>
+      <Name>SketchNotes.ChemicalEquationBalancer</Name>
     </ProjectReference>
     <ProjectReference Include="..\SketchNotes.Commands\SketchNotes.Commands.csproj">
       <Project>{d94c7016-514e-49ab-a7d0-76961eb1377a}</Project>

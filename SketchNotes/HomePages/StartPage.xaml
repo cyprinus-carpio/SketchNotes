@@ -58,7 +58,7 @@
                                               Description="3840 × 无限制 - 空白页"
                                               Width="180"
                                               Height="124"
-                                              TargetUri="mascot-sketchnotes://new/note">
+                                              TargetUri="mascot-sketchnotes:?method=new?type=note">
                                 <local:HeaderTile.Source>
                                     <FontIcon Glyph="&#xE7E6;" />
                                 </local:HeaderTile.Source>
@@ -68,7 +68,7 @@
                                               Description="1440 × 无限制 - Web 页"
                                               Width="180"
                                               Height="124"
-                                              TargetUri="mascot-sketchnotes://new/web">
+                                              TargetUri="mascot-sketchnotes:?method=new?type=web">
                                 <local:HeaderTile.Source>
                                     <FontIcon Glyph="&#xE7C3;" />
                                 </local:HeaderTile.Source>
@@ -78,7 +78,7 @@
                                               Description="自适应 - 地图页"
                                               Width="180"
                                               Height="124"
-                                              TargetUri="mascot-sketchnotes://new/map">
+                                              TargetUri="mascot-sketchnotes:?method=new?type=map">
                                 <local:HeaderTile.Source>
                                     <FontIcon Glyph="&#xE707;" />
                                 </local:HeaderTile.Source>
@@ -88,7 +88,7 @@
                                               Description="自定义 - 捕获页"
                                               Width="180"
                                               Height="124"
-                                              TargetUri="mascot-sketchnotes://new/capture">
+                                              TargetUri="mascot-sketchnotes:?method=new?type=capture">
                                 <local:HeaderTile.Source>
                                     <FontIcon Glyph="&#xE714;" />
                                 </local:HeaderTile.Source>

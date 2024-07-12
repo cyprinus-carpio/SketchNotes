@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SketchNotes.TTS", "SketchNo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SketchNotes.Commands", "SketchNotes.Commands\SketchNotes.Commands.csproj", "{D94C7016-514E-49AB-A7D0-76961EB1377A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SketchNotes.ChemicalEquationBalancer", "SketchNotes.ChemicalEquationBalancer\SketchNotes.ChemicalEquationBalancer.csproj", "{CDBA6E01-32F4-465E-9F78-86FF96E0D38A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -137,6 +139,26 @@ Global
 		{D94C7016-514E-49AB-A7D0-76961EB1377A}.Release|x64.Build.0 = Release|x64
 		{D94C7016-514E-49AB-A7D0-76961EB1377A}.Release|x86.ActiveCfg = Release|x86
 		{D94C7016-514E-49AB-A7D0-76961EB1377A}.Release|x86.Build.0 = Release|x86
+		{CDBA6E01-32F4-465E-9F78-86FF96E0D38A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDBA6E01-32F4-465E-9F78-86FF96E0D38A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDBA6E01-32F4-465E-9F78-86FF96E0D38A}.Debug|ARM.ActiveCfg = Debug|ARM
+		{CDBA6E01-32F4-465E-9F78-86FF96E0D38A}.Debug|ARM.Build.0 = Debug|ARM
+		{CDBA6E01-32F4-465E-9F78-86FF96E0D38A}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{CDBA6E01-32F4-465E-9F78-86FF96E0D38A}.Debug|ARM64.Build.0 = Debug|ARM64
+		{CDBA6E01-32F4-465E-9F78-86FF96E0D38A}.Debug|x64.ActiveCfg = Debug|x64
+		{CDBA6E01-32F4-465E-9F78-86FF96E0D38A}.Debug|x64.Build.0 = Debug|x64
+		{CDBA6E01-32F4-465E-9F78-86FF96E0D38A}.Debug|x86.ActiveCfg = Debug|x86
+		{CDBA6E01-32F4-465E-9F78-86FF96E0D38A}.Debug|x86.Build.0 = Debug|x86
+		{CDBA6E01-32F4-465E-9F78-86FF96E0D38A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDBA6E01-32F4-465E-9F78-86FF96E0D38A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDBA6E01-32F4-465E-9F78-86FF96E0D38A}.Release|ARM.ActiveCfg = Release|ARM
+		{CDBA6E01-32F4-465E-9F78-86FF96E0D38A}.Release|ARM.Build.0 = Release|ARM
+		{CDBA6E01-32F4-465E-9F78-86FF96E0D38A}.Release|ARM64.ActiveCfg = Release|ARM64
+		{CDBA6E01-32F4-465E-9F78-86FF96E0D38A}.Release|ARM64.Build.0 = Release|ARM64
+		{CDBA6E01-32F4-465E-9F78-86FF96E0D38A}.Release|x64.ActiveCfg = Release|x64
+		{CDBA6E01-32F4-465E-9F78-86FF96E0D38A}.Release|x64.Build.0 = Release|x64
+		{CDBA6E01-32F4-465E-9F78-86FF96E0D38A}.Release|x86.ActiveCfg = Release|x86
+		{CDBA6E01-32F4-465E-9F78-86FF96E0D38A}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

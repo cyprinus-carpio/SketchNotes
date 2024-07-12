@@ -704,27 +704,27 @@ namespace SketchNotes
 
             if (tag == "Note")
             {
-                App.CreatNewTab("mascot-sketchnotes://new/note");
+                App.CreatNewTab("mascot-sketchnotes:?method=new?type=note");
             }
             else if (tag == "Web")
             {
-                App.CreatNewTab("mascot-sketchnotes://new/web");
+                App.CreatNewTab("mascot-sketchnotes:?method=new?type=web");
             }
             else if (tag == "Map")
             {
-                App.CreatNewTab("mascot-sketchnotes://new/map");
+                App.CreatNewTab("mascot-sketchnotes:?method=new?type=map");
             }
             else if (tag == "Capture")
             {
-                App.CreatNewTab("mascot-sketchnotes://new/capture");
+                App.CreatNewTab("mascot-sketchnotes:?method=new?type=capture");
             }
             else if (tag == "Timer")
             {
-                App.CreatNewTab("mascot-sketchnotes://new/timer");
+                App.CreatNewTab("mascot-sketchnotes:?method=new?type=timer");
             }
             else
             {
-                App.CreatNewTab("mascot-sketchnotes://new/oobe");
+                App.CreatNewTab("mascot-sketchnotes:?method=new?type=oobe");
             }
 
             MainTabView.SelectedIndex = MainTabView.TabItems.Count - 1;
@@ -773,7 +773,7 @@ namespace SketchNotes
                     if (photo != null)
                     {
                         var stream = await file.OpenStreamForWriteAsync();
-                        photo.CopyTo(stream);
+                        await photo.CopyToAsync(stream);
                         stream.Dispose();
                     }
 
@@ -928,6 +928,12 @@ namespace SketchNotes
         private void MainRivePlayer_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
         {
 
+        }
+
+        private async void CommandAutoSuggestBox_QuerySubmitted(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
+        {
+            await Windows.System.Launcher.LaunchUriAsync(
+                new Uri("mascot-snterminal:?cmd="+sender.Text.Replace(" ","+")));
         }
 
         /// <summary>

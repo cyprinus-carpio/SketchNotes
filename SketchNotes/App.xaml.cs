@@ -292,7 +292,7 @@ namespace SketchNotes
             ApplicationView view = ApplicationView.GetForCurrentView();
             Match match;
 
-            match = Regex.Match(uri, @"://(.*)/(.*)");
+            match = Regex.Match(uri, @":\?method=(.*)\?type=(.*)");
 
             if (match.Success)
             {
